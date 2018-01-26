@@ -109,14 +109,14 @@ const routes = [
         path: 'album/book/relation',
         alias: 'editalbumbookrelation',
         component: EditAlbumBookRelationView,
-        name: '编辑专辑-书本对应关系',
+        name: '编辑证书-书本对应关系',
         meta: {description: 'EditAlbumBookRelationView'}
       },
       {
         path: 'album/edit',
         alias: 'editalbum',
         component: EditAlbumView,
-        name: '编辑专辑',
+        name: '编辑证书',
         meta: {description: 'EditAlbumView'}
       },
       {
@@ -130,7 +130,7 @@ const routes = [
         path: 'album/add',
         alias: 'addalbum',
         component: AddAlbumView,
-        name: '添加专辑',
+        name: '添加证书',
         meta: {description: 'AddAlbumView'}
       },
       {

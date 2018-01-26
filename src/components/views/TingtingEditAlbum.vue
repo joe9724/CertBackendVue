@@ -154,6 +154,7 @@
             var data = response.data
             console.log(JSON.stringify(data))
             alert('修改成功')
+            history.back()
           })
           .catch(error => {
             console.log(error)

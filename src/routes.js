@@ -165,7 +165,7 @@ const routes = [
         path: 'album/list',
         alias: 'albumlist',
         component: AlbumListView,
-        name: '专辑列表',
+        name: '证书列表',
         meta: {description: 'AlbumListView'}
       },
       {

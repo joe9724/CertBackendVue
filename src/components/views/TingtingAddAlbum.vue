@@ -1,44 +1,26 @@
 <template>
   <div>
-    <h5 class="text-center">添加专辑</h5>
+    <h5 class="text-center"><!--添加专辑--></h5>
     <section class="content">
       <div class="row">
         <div class="col-md-12">
           <el-form ref="form" :model="form" label-width="80px">
-            <el-form-item label="名称">
+            <el-form-item label="器具名称">
               <el-input v-model="form.name"></el-input>
             </el-form-item>
-            <el-form-item label="定价">
-              <el-input-number v-model="form.value" @change="handleChange" :min="1" :max="10000"
-                               label="改变价格"></el-input-number>
+            <el-form-item label="型号规格">
+              <el-input v-model="form.authorAvatar"></el-input>
             </el-form-item>
-            <el-form-item label="图标">
-              <img v-bind:src="imgUrl"/>
-              <vue-core-image-upload
-                class="btn btn-primary"
-                :crop="false"
-                @imageuploaded="imageUploaded"
-                :data="data"
-                :max-file-size="5242880"
-                inputOfFile="file"
-                text="选择图片"
-                :credentials="false"
-                :url="uploadUrl">
-
-              </vue-core-image-upload>
-            </el-form-item>
-            <el-form-item label="状态">
-              <el-radio-group v-model="form.status">
-                <el-radio label="正常"></el-radio>
-                <el-radio label="锁定"></el-radio>
-              </el-radio-group>
+            <el-form-item label="唯一编号">
+              <el-input v-model="form.authorName"></el-input>
             </el-form-item>
             <!-- bidirectional data binding（双向数据绑定） -->
+            <el-form-item label="内容">
             <vue-editor id="editor"
                         useCustomImageHandler
                         @imageAdded="handleImageAdded" v-model="htmlForEditor">
             </vue-editor>
-
+            </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="onSubmit">确定</el-button>
               <!--<el-button>确定</el-button>-->
@@ -65,6 +47,8 @@
         htmlForEditor: '',
         uploadUrl: 'http://192.168.200.208:81/nanjingyouzi/TingtingBackend/1.0.0/file/upload',
         form: {
+          authorAvatar: '',
+          authorName: '',
           name: '',
           region: '',
           date1: '',

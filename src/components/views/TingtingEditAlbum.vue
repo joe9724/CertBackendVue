@@ -133,29 +133,27 @@
         // alert(this.content)
         // this.$router.push('/org')
         // console.log('submit!')
+        var albumId = '0'
+        if (this.$route.query.albumId) {
+          albumId = this.$route.query.albumId
+          this.albumId = this.$route.query.albumId
+        }
         var userid = localStorage.getItem('userid')
         console.log(userid)
         let formData = new FormData()
         formData.append('name', this.form.name)
-        if (this.form.status === '正常') {
-          formData.append('status', Number(0))
-        } else {
-          formData.append('status', Number(1))
-        }
-        formData.append('subTitle', this.form.name)
+        formData.append('subTitle', this.form.authorAvatar)
         formData.append('title', this.form.name)
-        formData.append('albumId', Number(-1))
+        formData.append('content', this.form.authorName)
         formData.append('summary', this.htmlForEditor)
-        if (this.imgUrl !== '') {
-          formData.append('iconUrl', this.imgUrl)
-        }
+        formData.append('albumId', Number(albumId))
         // formData.append('file', this.file)
 
         api.requestForm('post', 'album/upload', formData)
           .then(response => {
             var data = response.data
             console.log(JSON.stringify(data))
-            alert('ok')
+            alert('修改成功')
           })
           .catch(error => {
             console.log(error)

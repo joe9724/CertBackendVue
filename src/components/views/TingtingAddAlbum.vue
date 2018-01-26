@@ -118,25 +118,21 @@
         console.log(userid)
         let formData = new FormData()
         formData.append('name', this.form.name)
-        if (this.form.status === '正常') {
-          formData.append('status', Number(0))
-        } else {
-          formData.append('status', Number(1))
-        }
-        formData.append('subTitle', this.form.name)
+        formData.append('subTitle', this.form.authorAvatar)
         formData.append('title', this.form.name)
-        formData.append('albumId', Number(-1))
+        formData.append('content', this.form.authorName)
         formData.append('summary', this.htmlForEditor)
-        if (this.imgUrl !== '') {
+        formData.append('albumId', Number(-1))
+        /* if (this.imgUrl !== '') {
           formData.append('iconUrl', this.imgUrl)
-        }
+        } */
         // formData.append('file', this.file)
 
         api.requestForm('post', 'album/upload', formData)
           .then(response => {
             var data = response.data
             console.log(JSON.stringify(data))
-            alert('ok')
+            alert('添加成功')
           })
           .catch(error => {
             console.log(error)

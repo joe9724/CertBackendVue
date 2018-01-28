@@ -18,8 +18,9 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8082,
+    port: 80,
     assetsSubDirectory: 'static',
+    // assetsPublicPath: 'http://cert-resource.bitekun.xin',
     assetsPublicPath: '/',
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"

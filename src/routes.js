@@ -1,5 +1,6 @@
 import DashView from './components/Dash.vue'
 import LoginView from './components/Login.vue'
+import SearchCertView from './components/Search.vue'
 import NotFoundView from './components/404.vue'
 
 // Import Views - Dash
@@ -51,6 +52,10 @@ const routes = [
   {
     path: '/backend',
     component: LoginView
+  },
+  {
+    path: '/search',
+    component: SearchCertView
   },
   {
     path: '/',

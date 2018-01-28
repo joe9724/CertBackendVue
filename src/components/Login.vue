@@ -2,8 +2,10 @@
   <div class="container container-table">
       <div class="row vertical-10p">
         <div class="container">
-          <img src="/static/img/logo.png" class="center-block logo">
-          <div class="text-center col-md-4 col-sm-offset-4">
+          <!--<img src="/static/img/logo.png" class="center-block logo">-->
+
+          <div align="center" style="margin-top: 200px"><h4>证书管理系统</h4></div>
+          <div class="text-center col-md-4 col-sm-offset-4" style="margin-top: 10px">
             <!-- login form -->
             <form class="ui form loginForm"  @submit.prevent="checkCreds">
 

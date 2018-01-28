@@ -1,17 +1,13 @@
 <template>
   <div >
-    <!--<li class="header">设备管理</li>-->
-     <!--<router-link tag="li" class="pageLink" to="/myDevice">-->
-       <!--<a>-->
-         <!--<i class="fa fa-desktop"></i>-->
-         <!--<span class="page">我的设备</span>-->
-       <!--</a>-->
-     <!--</router-link>-->
-     <!--<router-link tag="li" class="pageLink" to="/devicelist">-->
-       <!--<a>-->
-         <!--<i class="fa fa-table"></i>-->
-         <!--<span class="page">设备管理</span>-->
-       <!--</a>-->
+    <!--<li class="header">资料管理</li>-->
+     <router-link tag="li" class="pageLink" to="/album/list">
+       <a>
+         <i class="fa fa-desktop"></i>
+         <span class="page" style="margin-top: 10px">证书管理</span>
+       </a>
+     </router-link>
+
      <!--</router-link>-->
      <!--<li class="header">用户管理</li>-->
      <!--<router-link tag="li" class="pageLink" to="/users">-->
@@ -87,7 +83,7 @@
     <!--</router-link>-->
 
     <!--</span>-->
-    <ul v-for="item in arrayData" class="sidebar-menu" :key="item.name">
+    <!--<ul v-for="item in arrayData" class="sidebar-menu" :key="item.name">
 
     <li class="header" v-if="item.router_url==='-1'"><span>{{item.name}}</span></li>
 
@@ -97,7 +93,7 @@
         <span class="page">{{it.name}}</span>
       </a>
     </li>
-    </ul>
+    </ul>-->
 
 
     <!--<script>

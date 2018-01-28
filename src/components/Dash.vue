@@ -2,7 +2,7 @@
   <div :class="['wrapper', classes]">
     <header class="main-header">
 	<span class="logo-mini">
-		<a href="/"><img src="/static/img/copilot-logo-white.svg" alt="Logo" class="img-responsive center-block logo"></a>
+		<!--<a href="/"><img src="/static/img/copilot-logo-white.svg" alt="Logo" class="img-responsive center-block logo"></a>-->
 	</span>
       <!-- Header Navbar -->
       <nav class="navbar navbar-static-top" role="navigation">
@@ -14,10 +14,10 @@
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
             <!-- Messages-->
-            <li class="dropdown messages-menu">
+            <!--<li class="dropdown messages-menu">
               <router-link  class="pageLink" to="/user/updatePass">修改密码</router-link>
 
-            </li>
+            </li>-->
             <!-- /.messages-menu -->
 
             <!-- Notifications Menu -->
@@ -31,11 +31,11 @@
                 <!-- The user image in the navbar-->
                 <!--<img v-bind:src="demo.avatar" class="user-image" alt="User Image">-->
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs"><!--{{ demo.displayName }}-->BTK</span>
+                <!--<span class="hidden-xs">&lt;!&ndash;{{ demo.displayName }}&ndash;&gt;BTK</span>-->
               </a>
               <ul class="dropdown-menu" style="width: 100%">
-                <li class="header"><el-button type="primary" style="width: 100%">修改密码</el-button></li>
-                <li class="header"><el-button type="success" style="width: 100%">注销登录</el-button></li>
+                <!--<li class="header"><el-button type="primary" style="width: 100%">修改密码</el-button></li>
+                <li class="header"><el-button type="success" style="width: 100%">注销登录</el-button></li>-->
 
               </ul>
             </li>

@@ -83,7 +83,7 @@ export default {
             }
             // this.$router.push(data.dynamicRouter[0].children[0].router_url)
             // this.$router.push(data.data.paths[0].children[0].resource)
-            this.$router.push('/album/list')
+            this.$router.push('/album/listshow')
             // console.log('path is' + JSON.stringify(data.data.paths[0].children[0].path))
           }
         })

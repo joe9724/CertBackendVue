@@ -50,8 +50,8 @@ const routes = [
         meta: {description: 'AddAlbumView'}
       },
       {
-        path: 'album/list',
-        alias: 'albumlist',
+        path: 'album/listshow',
+        alias: 'albumlistshow',
         component: AlbumListView,
         name: '证书列表',
         meta: {description: 'AlbumListView'}

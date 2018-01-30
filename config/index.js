@@ -18,7 +18,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 80,
+    port: 8082,
     assetsSubDirectory: 'static',
     // assetsPublicPath: 'http://cert-resource.bitekun.xin',
     assetsPublicPath: '/',
